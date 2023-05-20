@@ -9,7 +9,13 @@
 }
 
 body {
+  padding: 0%;
+  margin: 0%;
   font-family: "Inter", sans-serif;
+}
+
+main {
+  background-color: var(--color-gray);
 }
 
 /*SECTION NAV */
@@ -23,6 +29,10 @@ a {
 
 .text-dark {
   color: var(--color-dark);
+}
+
+.text-dark:hover {
+  color: var(--color-primary)
 }
 
 .font-bold {
@@ -64,6 +74,10 @@ a {
 .button-gray {
   background-color: var(--color-gray-dark);
   color: var(--color-light);
+}
+
+.button-gray:hover {
+  background-color: var(--color-primary);
 }
 
 .button-primary-outline {
