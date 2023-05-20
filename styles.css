@@ -12,6 +12,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/*SECTION NAV */
 li {
   list-style: none;
 }
@@ -85,6 +86,7 @@ a {
   left: 0;
 }
 
+/*Section Main*/
 .text-primary-header {
   font-size: 4rem;
   line-height: 3.75rem;
