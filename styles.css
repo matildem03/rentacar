@@ -1,7 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
 :root {
   --color-light: #ffffff;
   --color-primary: #f85521;
   --color-gray: #cfcfcf;
   --color-gray-dark: #5f5f5f;
   --color-dark: #000000;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.app-logo {
+  height: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.restrict-container {
+  justify-content: space-between;
+  padding: 0rem 4rem;
+  max-width: 1920px;
+}
+
+.flex-spacer-horizontal {
+  gap: 1rem;
+}
+
+.flex-spacer-horizontal-xl {
+  gap: 3rem;
+}
+
+.profile-icon {
+  width: 1.75rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.button-gray {
+  background-color: var(--color-gray-dark);
+  color: var(--color-light);
+}
+
+.button-primary-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: solid 2px var(--color-primary);
+}
+
+.selected-li {
+  position: relative;
+}
+
+.selected-li::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: var(--color-primary);
+  width: 100%;
+  bottom: -0.25rem;
+  left: 0;
+}
+
+.text-primary-header {
+  font-size: 4rem;
+  line-height: 3.75rem;
+}
+
+.text-primary-paragraph {
+  font-size: 1.5rem;
+  color: var(--color-gray-dark);
 }
