@@ -32,7 +32,7 @@ a {
 }
 
 .text-dark:hover {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .font-bold {
@@ -51,7 +51,17 @@ a {
 .restrict-container {
   justify-content: space-between;
   padding: 0rem 4rem;
-  max-width: 1920px;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.relative-container {
+  position: relative;
+}
+
+.space-top {
+  margin-top: 7.5rem;
 }
 
 .flex-spacer-horizontal {
@@ -69,6 +79,7 @@ a {
 .button {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
+  font-weight: 500;
 }
 
 .button-gray {
@@ -112,6 +123,50 @@ a {
 }
 
 .background-car {
+  margin-top: 4rem;
   height: 300px;
   width: 800px;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.main-content::after {
+  content: "";
+  height: 422px;
+  width: 400px;
+  background-color: var(--color-primary);
+  position: absolute;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  right: 0;
+  top: 0;
+}
+
+.download-card {
+  background-color: var(--color-light);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  gap: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.social-logo {
+  width: 1.75rem;
+}
+
+.social-container {
+  gap: 1.5rem;
+}
+
+.download-text {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.play-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
 }
