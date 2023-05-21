@@ -141,7 +141,7 @@ a {
 
 .main-content::after {
   content: "";
-  height: 491px;
+  height: 561px;
   width: 400px;
   background-color: var(--color-primary);
   position: absolute;
@@ -181,9 +181,14 @@ a {
 }
 
 /*BUTÕES TIPOS DE VEICULOS*/
+.position-buttons {
+  margin: 1.5rem;
+}
+
 .button-square {
   padding: 0.5rem 1rem;
   font-weight: 500;
+
 }
 
 .button-car {
@@ -192,13 +197,7 @@ a {
   border: solid 2px var(--color-primary);
 }
 
-.button-carrinhas {
-  background-color: transparent;
-  color: var(--color-gray-dark);
-  border: solid 2px var(--color-primary);
-}
-
-.button-especiais {
+.button-other {
   background-color: transparent;
   color: var(--color-gray-dark);
   border: solid 2px var(--color-primary);
