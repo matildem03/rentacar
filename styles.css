@@ -131,7 +131,7 @@ a {
 }
 
 .background-car {
-  margin-top: 4rem;
+  margin-top: 20rem;
   height: 300px;
   width: 800px;
   position: absolute;
@@ -198,7 +198,18 @@ a {
 }
 
 .button-other {
-  background-color: transparent;
+  background-color: var(--color-light);
   color: var(--color-gray-dark);
   border: solid 2px var(--color-primary);
+}
+
+.search-container {
+  padding: o.5rem 1rem;
+  margin: 1.5rem;
+  background-color: var(--color-light);
+}
+
+.procura {
+  background-color: var(--color-primary);
+
 }
