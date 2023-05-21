@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
+/*GENERAL*/
 :root {
   --color-light: #ffffff;
   --color-primary: #f85521;
@@ -56,6 +57,7 @@ a {
   margin-right: auto;
 }
 
+/*Divisão título e texto */
 .relative-container {
   position: relative;
 }
@@ -75,6 +77,8 @@ a {
 .profile-icon {
   width: 1.75rem;
 }
+
+/*BUTTONS NAVBAR*/
 
 .button {
   padding: 0.5rem 1rem;
@@ -127,7 +131,7 @@ a {
   height: 300px;
   width: 800px;
   position: absolute;
-  right: 0;
+  right: 3.9rem;
   z-index: 10;
 }
 
@@ -138,7 +142,7 @@ a {
   background-color: var(--color-primary);
   position: absolute;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
-  right: 0;
+  right: 4.3rem;
   top: 0;
 }
 
@@ -151,7 +155,7 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.social-logo {
+.logo {
   width: 1.75rem;
 }
 
