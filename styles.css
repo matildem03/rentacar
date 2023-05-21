@@ -131,13 +131,13 @@ a {
   height: 300px;
   width: 800px;
   position: absolute;
-  right: 3.9rem;
+  right: 4.5rem;
   z-index: 10;
 }
 
 .main-content::after {
   content: "";
-  height: 422px;
+  height: 491px;
   width: 400px;
   background-color: var(--color-primary);
   position: absolute;
@@ -173,4 +173,27 @@ a {
   font-weight: bold;
   font-size: 1.25rem;
   margin: 0;
+}
+
+.button-square {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.button-car {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: solid 2px var(--color-primary);
+}
+
+.button-carrinhas {
+  background-color: transparent;
+  color: var(--color-gray-dark);
+  border: solid 2px var(--color-primary);
+}
+
+.button-especiais {
+  background-color: transparent;
+  color: var(--color-gray-dark);
+  border: solid 2px var(--color-primary);
 }
