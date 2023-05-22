@@ -152,6 +152,7 @@ a {
 
 .download-card {
   background-color: var(--color-light);
+  color: var(--color-dark);
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
   gap: 1rem;
