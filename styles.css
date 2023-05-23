@@ -237,6 +237,13 @@ a {
   margin-top: -7rem;
 }
 
+.form-log {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+
+}
+
 /*SEGURO*/
 
 .main-content-seg::after {
@@ -249,4 +256,11 @@ a {
   top: -2rem;
 }
 
-.seguro-square
+.seguro-square::after {
+  content: "";
+  height: 100px;
+  width: 150px;
+  outline-color: var(--color-primary);
+  position: absolute;
+  top: -2rem;
+}
