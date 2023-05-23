@@ -218,12 +218,19 @@ a {
 /*LOGIN*/
 
 .main-content-log::after {
+
   content: "";
-  height: 561px;
+  height: 500px;
   width: 400px;
   background-color: var(--color-primary);
   position: absolute;
-  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
   right: 35rem;
   top: -2rem;
+}
+
+.car-login {
+  height: 1200px;
+  width: 2000px;
+  margin-top: -7rem;
 }
