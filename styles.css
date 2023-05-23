@@ -236,3 +236,17 @@ a {
   width: 2000px;
   margin-top: -7rem;
 }
+
+/*SEGURO*/
+
+.main-content-seg::after {
+  content: "";
+  height: 500px;
+  width: 2px;
+  background-color: var(--color-primary);
+  position: absolute;
+  right: 50rem;
+  top: -2rem;
+}
+
+.seguro-square
