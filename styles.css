@@ -214,3 +214,16 @@ a {
   background-color: var(--color-primary);
 
 }
+
+/*LOGIN*/
+
+.main-content-log::after {
+  content: "";
+  height: 561px;
+  width: 400px;
+  background-color: var(--color-primary);
+  position: absolute;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  right: 35rem;
+  top: -2rem;
+}
