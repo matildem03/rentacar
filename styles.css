@@ -276,11 +276,14 @@ input[type="submit"] {
   margin-left: 2rem;
 }
 
+
+/**/
+
 .input-component {
   align-items: start;
 }
 
-.input-component > input {
+.input-component>input {
   border-radius: 0.5rem;
 }
 
