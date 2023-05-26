@@ -276,6 +276,21 @@ input[type="submit"] {
   margin-left: 2rem;
 }
 
+/*SEGUROS*/
+.seguros1 {
+  background-color: var(--color-light);
+  border: 2.5px solid;
+  border-color: var(--color-primary);
+  color: var(--color-gray-dark);
+  width: 400px;
+  height: 200px;
+  border-radius: 0.75rem;
+  margin-top: 3rem;
+  margin-left: 4.95rem;
+  margin-right: auto;
+  display: inline-block;
+}
+
 
 /**/
 
