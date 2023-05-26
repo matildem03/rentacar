@@ -227,7 +227,7 @@ a {
   background-color: var(--color-primary);
   position: absolute;
   border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-  right: 35rem;
+  right: 32rem;
   top: -2rem;
 }
 
@@ -238,10 +238,24 @@ a {
 }
 
 .form-log {
+  color: var(--color-light);
   text-align: center;
-  width: 300px;
-  padding: 20px;
+  margin-top: -60rem;
+  position: absolute;
+  margin-left: 35rem;
+  z-index: 10;
+}
 
+input[type="text"],
+input[type="password"] {
+  height: 26px;
+  background-color: var(--color-light);
+  border-radius: 1rem;
+}
+
+input[type="submit"] {
+  height: 34px;
+  border-radius: 1rem;
 }
 
 /*SEGURO*/
