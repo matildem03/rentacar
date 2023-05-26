@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="fill-height">
         <header class="flex-container restrict-container">
             <div class="flex-container flex-spacer-horizontal-xl">
                 <img src="public/WheelzLogo.png" alt="Wheelz Logo" class="app-logo" />
@@ -42,18 +42,19 @@
                 </li>
             </ul>
         </header>
-        <div class="space-top relative-container main-content-log">
-            <img src="public/carros-bckg.jpg" class="car-login">
-            <form action="login.php" method="POST" class="form-log flex-container-col">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required placeholder="Escreve o teu mail"><br><br>
+        <div class="space-top relative-container restrict-container">
+            <form class="form-log flex-container-col auth-container flex-container">
+                <div class="flex-container-col input-component">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required />
+                </div>
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required
-                    placeholder="Escreve a tua password"><br><br>
+                <div class="flex-container-col input-component">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required />
+                </div>
 
-                <input type="submit" value="Login"><br><br>
-                <a>Crie a sua conta</a>
+                <button type="submit" class="sign-button">Entrar</button>
             </form>
         </div>
 </body>

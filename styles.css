@@ -59,13 +59,16 @@ a {
   flex-direction: column;
 }
 
-
 .restrict-container {
   justify-content: space-between;
   padding: 0rem 4rem;
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.auth-container {
+  max-width: 25%;
 }
 
 /*Divisão título e texto */
@@ -202,7 +205,6 @@ a {
   font-weight: 500;
   border-radius: 1rem;
   margin-right: 1rem;
-
 }
 
 .button-car {
@@ -225,22 +227,9 @@ a {
 
 .procura {
   background-color: var(--color-primary);
-
 }
 
 /*LOGIN*/
-
-.main-content-log::after {
-
-  content: "";
-  height: 500px;
-  width: 400px;
-  background-color: var(--color-primary);
-  position: absolute;
-  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-  right: 32rem;
-  top: -2rem;
-}
 
 .car-login {
   height: 1200px;
@@ -308,7 +297,6 @@ input[type="submit"] {
   margin-right: auto;
   display: flex;
   align-items: center;
-
 }
 
 .aboutus2 {
@@ -330,4 +318,27 @@ input[type="submit"] {
 
 .text-aboutus2 {
   margin-left: 2rem;
+}
+
+.input-component {
+  align-items: start;
+}
+
+.input-component > input {
+  border-radius: 0.5rem;
+}
+
+.sign-button {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.sign-button:hover {
+  background-color: var(--color-gray);
+}
+
+.fill-height {
+  height: 100vh;
+  min-height: 100vh;
 }
