@@ -49,6 +49,13 @@ a {
   align-items: center;
 }
 
+.flex-container-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 .restrict-container {
   justify-content: space-between;
   padding: 0rem 4rem;
@@ -237,17 +244,10 @@ a {
   margin-top: -7rem;
 }
 
-.form-log {
-  color: var(--color-light);
-  text-align: center;
-  margin-top: -60rem;
-  position: absolute;
-  margin-left: 35rem;
-  z-index: 10;
-}
-
 input[type="text"],
 input[type="password"] {
+  border: 2.5px solid;
+  border-color: var(--color-light);
   height: 26px;
   background-color: var(--color-light);
   border-radius: 1rem;
@@ -293,7 +293,7 @@ input[type="submit"] {
   margin-bottom: -4px;
 }
 
-.aboutus {
+.aboutus1 {
   background-color: var(--color-primary);
   color: var(--color-dark);
   width: 1400px;
@@ -302,13 +302,31 @@ input[type="submit"] {
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
 
 }
 
-.text-aboutus {
-  text-align: left;
+.aboutus2 {
+  background-color: var(--color-gray);
+  color: var(--color-dark);
+  width: 1400px;
+  height: 200px;
+  border-radius: 0.75rem;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.text-aboutus1 {
   margin-left: 25rem;
   margin-right: 2rem;
-  margin-top: auto;
-  margin-bottom: auto;
+}
+
+.text-aboutus2 {
+  margin-left: 2rem;
+  margin-right: 25rem;
+
 }
