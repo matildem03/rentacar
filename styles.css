@@ -179,7 +179,7 @@ ul {
 }
 
 .max-w-screen-xl {
-  max-width: 1536px;
+  max-width: 1280px;
 }
 
 .w-md {
@@ -343,7 +343,7 @@ ul {
 .car-content::after {
   content: "";
   background-color: var(--color-primary);
-  height: 600px;
+  height: 632px;
   width: 400px;
   position: absolute;
   top: 11.7%;
