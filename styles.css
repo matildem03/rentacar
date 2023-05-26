@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
-/*GENERAL*/
+/*              GENERAL & RESETS              */
+
 :root {
   --color-light: #ffffff;
   --color-primary: #f85521;
+  --color-gray-light: #f8f8f8;
   --color-gray: #cfcfcf;
   --color-gray-dark: #5f5f5f;
   --color-dark: #000000;
@@ -15,15 +17,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-main {
-  background-color: var(--color-gray);
-}
-
-footer {
-  background-color: var(--color-gray);
-}
-
-/*SECTION NAV */
 li {
   list-style: none;
 }
@@ -32,39 +25,10 @@ a {
   text-decoration: none;
 }
 
-.text-dark {
-  color: var(--color-dark);
-}
-
-.text-dark:hover {
-  color: var(--color-primary);
-}
-
-.font-bold {
-  font-weight: bold;
-}
-
-.app-logo {
-  height: 2rem;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-}
-
 .flex-container-col {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.restrict-container {
-  justify-content: space-between;
-  padding: 0rem 4rem;
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .auth-container {
@@ -78,14 +42,6 @@ a {
 
 .space-top {
   margin-top: 7.5rem;
-}
-
-.flex-spacer-horizontal {
-  gap: 1rem;
-}
-
-.flex-spacer-horizontal-xl {
-  gap: 3rem;
 }
 
 .profile-icon {
@@ -351,6 +307,10 @@ input[type="submit"] {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 /* Position */
 
 .relative {
@@ -387,6 +347,22 @@ input[type="submit"] {
   color: var(--color-light);
 }
 
+.text-grayLight {
+  color: var(--color-gray-dark);
+}
+
+.text-grayDark {
+  color: var(--color-gray-light);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
 /* Padding */
 
 .py-sm {
@@ -413,7 +389,41 @@ input[type="submit"] {
 
 /* Width */
 
+.w-full {
+  width: 100%;
+}
+
+.max-w-screen-xl {
+  max-width: 1536px;
+}
+
 /* Height */
+
+.h-full {
+  height: 100%;
+}
+
+.h-lg {
+  height: 2rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Gap */
+
+.gap-md {
+  gap: 1rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-xl {
+  gap: 3rem;
+}
 
 /* Background */
 
@@ -429,6 +439,10 @@ input[type="submit"] {
   background-color: var(--color-gray);
 }
 
+.bg-grayLight {
+  background-color: var(--color-gray-light);
+}
+
 .bg-grayDark {
   background-color: var(--color-gray-dark);
 }
@@ -439,6 +453,14 @@ input[type="submit"] {
   border-radius: 9999px;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 /* Display */
 
 .flex {
@@ -447,4 +469,24 @@ input[type="submit"] {
 
 .flex-col {
   flex-direction: column;
+}
+
+/* Align */
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Shadow */
+
+.shadow-lg {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
