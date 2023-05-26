@@ -342,3 +342,109 @@ input[type="submit"] {
   height: 100vh;
   min-height: 100vh;
 }
+
+/*              UTILITIES              */
+
+/* Font */
+
+.font-medium {
+  font-weight: 500;
+}
+
+/* Position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Text */
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xxl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+/* Padding */
+
+.py-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-lg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-xxl {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Margin */
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Width */
+
+/* Height */
+
+/* Background */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.bg-grayDark {
+  background-color: var(--color-gray-dark);
+}
+
+/* Border */
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Display */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
