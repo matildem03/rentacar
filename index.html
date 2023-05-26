@@ -5,35 +5,34 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wheelz_RentaCar</title>
+  <title>Wheelz RentaCar</title>
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
 
 <body>
   <main class="bg-gray">
-    <header class="flex items-center max-w-screen-xl mx-auto justify-between">
+    <header class="flex items-center max-w-screen-xl mx-auto justify-between pt-lg">
       <div class="flex items-center gap-xl">
-        <img src="public/WheelzLogo.png" alt="Wheelz Logo" class="h-lg" />
+        <a href="index.html"><img src="public/WheelzLogo.png" alt="Wheelz Logo" class="h-lg" /></a>
         <nav class="app-nav">
           <ul class="flex items-center gap-md">
             <li>
               <a href="" class="text-dark font-bold selected-li">Aluguer</a>
             </li>
-            <li><a href="quems.html" class="text-dark font-bold">QuemSomos</a></li>
+            <li><a href="quems.html" class="text-dark font-bold">Sobre</a></li>
             <li><a href="seguros.html" class="text-dark font-bold">Seguros</a></li>
-            <li><a href="" class="text-dark font-bold">ApoioAoCliente</a></li>
+            <li><a href="" class="text-dark font-bold">Contacto</a></li>
           </ul>
         </nav>
       </div>
-      <ul class="flex items-center flex-spacer-horizontal">
+      <ul class="flex items-center gap-md">
         <li><a href="" class="bg-grayDark text-light px-lg py-sm rounded-full font-medium">Reservar</a></li>
         <li>
-          <a href="" class="button button-primary-outline">Carrinho</a>
+          <a href="" class="rounded-full border-2 border-primary text-primary font-medium px-lg py-sm">Carrinho</a>
         </li>
-        <!--Logo de login-->
         <li>
-          <a href="login.html" style="color:black;"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="profile-icon">
+          <a href="login.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-dark w-md h-md" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
@@ -41,45 +40,47 @@
         </li>
       </ul>
     </header>
-    <div class="flex items-center max-w-screen-xl mx-auto justify-between space-top relative-container main-content">
-      <div>
+    <div class="py-uxxl flex items-center max-w-screen-xl mx-auto justify-between space-top relative-container">
+      <div class="flex flex-col gap-lg">
         <h1 class="text-xxl">
           Melhor <br />
           Rent a Car <br />
           Em Portugal
         </h1>
-        <p class="text-primary-paragraph">
+        <p class="text-xl text-grayDark font-medium">
           Wheelz é o lugar ideal para alugar os<br />
           carros da forma mais segura para as tuas viagens.
         </p>
-        <div class="flex items-center social-container">
-          <a class="flex items-center download-card" href="https://www.apple.com/pt/store">
-            <img src="public/apple-logo.png" alt="Apple Logo" class="logo" />
+        <div class="flex items-center gap-md">
+          <a class="flex items-center gap-md rounded-lg bg-light shadow-lg px-md py-sm" href="https://www.apple.com/pt/store">
+            <img src="public/apple-logo.png" alt="Apple Logo" class="w-lg" />
             <div>
-              <p class="download-text">Download On The</p>
-              <p class="play-text">Apple Store</p>
+              <p class="text-dark">Download On The</p>
+              <p class="text-dark font-bold">Apple Store</p>
             </div>
           </a>
-          <a class="flex items-center download-card" href="https://play.google.com/store/games?hl=pt_PT">
-            <img src="public/google-play-logo.png" alt="Google Play Logo" class="logo" />
+          <a class="flex items-center gap-md rounded-lg bg-light shadow-lg px-md py-sm" href="https://play.google.com/store/games?hl=pt_PT">
+            <img src="public/google-play-logo.png" alt="Google Play Logo" class="w-lg" />
             <div>
-              <p class="download-text">Get It On</p>
-              <p class="play-text">Google Play</p>
+              <p class="text-dark">Get It On</p>
+              <p class="text-dark font-bold">Google Play</p>
             </div>
           </a>
         </div>
       </div>
-      <img src="public/bentley-1.png" class="background-car">
+      <div class="car-content">
+        <img src="public/bentley-1.png" class="car-bg">
+      </div>
     </div>
-    <br>
-    <div class="flex items-center">
-      <ul class="flex items-center position-buttons">
-        <li><a href="" class="button-square button-car">Carros</a></li>
+  </main>
+  <section>
+    <div class="flex items-center max-w-screen-xl mx-auto">
+      <ul class="flex items-center py-xl">
         <li>
-          <a href="" class="button-square button-other">Carrinhas</a>
+          <a href="" class="bg-primary text-light rounded-l-lg py-md px-lg">Carros</a>
         </li>
-        <li><a href="" class="button-square button-other">Especiais</a>
-        </li>
+        <li>
+          <a href="" class="bg-light text-dark rounded-r-lg py-md px-lg">Carrinhas</a>          </li>
     </div>
     <div class="flex items-center search-container">
       <ul class="flex items-center flex-spacer-horizontal">
@@ -91,7 +92,7 @@
         <li><a href="" class="procura">Procura</a></li>
       </ul>
     </div>
-  </main>
+  </section>
   <footer class="bg-gray"></footer>
 
   <script language="javascript" src="script.js"></script>
