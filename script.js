@@ -9,16 +9,6 @@ function showElement() {
     }
 }
 
-function hideElement() {
-    var radio = document.getElementById("paypal");
-    var content = document.getElementById("hiddenelement");
-
-    if (radio.checked) {
-        content.style.display = "none";
-    } else {
-        content.style.display = "none";
-    }
-}
 
 function hideElement1() {
     var radio = document.getElementById("mbway");
@@ -31,9 +21,9 @@ function hideElement1() {
     }
 }
 
-function hideElement() {
+function hideButton() {
     var radio = document.getElementById("multibanco");
-    var content = document.getElementById("buttonesconde");
+    var content = document.getElementById("button");
 
     if (radio.checked) {
         content.style.display = "none";
