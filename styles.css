@@ -205,10 +205,18 @@ button {
   width: 2rem;
 }
 
+.w-xl {
+  width: 2.5rem;
+}
+
 /* Height */
 
 .h-full {
   height: 100%;
+}
+
+.h-sm {
+  height: 1rem;
 }
 
 .h-md {
@@ -217,6 +225,10 @@ button {
 
 .h-lg {
   height: 2rem;
+}
+
+.h-xl {
+  height: 2.5rem;
 }
 
 .min-h-screen {
