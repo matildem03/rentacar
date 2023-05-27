@@ -11,6 +11,10 @@
   --color-dark: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0%;
   margin: 0%;
@@ -47,6 +51,10 @@ button {
   margin: 0;
   padding: 0;
   background-color: transparent;
+}
+
+input {
+  border: none;
 }
 
 /*              UTILITIES              */
@@ -226,8 +234,20 @@ button {
   width: 33.33%;
 }
 
+.w-100 {
+  width: 100px;
+}
+
+.w-450 {
+  width: 450px;
+}
+
 .max-w-lg {
   max-width: 20rem;
+}
+
+.max-w-xl {
+  max-width: 30rem;
 }
 
 /* Height */
@@ -260,6 +280,10 @@ button {
   max-height: 14rem;
 }
 
+.h-100 {
+  height: 100px;
+}
+
 /* Gap */
 
 .gap-md {
@@ -272,6 +296,10 @@ button {
 
 .gap-xl {
   gap: 3rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 /* Background */
