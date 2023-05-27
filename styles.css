@@ -383,3 +383,7 @@ button {
   height: 300px;
   margin-bottom: -1.2rem;
 }
+
+.hidden {
+  display: none;
+}

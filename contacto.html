@@ -21,7 +21,7 @@
                         </li>
                         <li><a href="quems.html" class="text-dark font-bold">Sobre</a></li>
                         <li><a href="seguros.html" class="text-dark font-bold">Seguros</a></li>
-                        <li><a href="contacto.html" class="text-dark font-bold">Contacto</a></li>
+                        <li><a href="contacto.html" class="text-dark font-bold selected-li">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,33 +42,6 @@
                 </li>
             </ul>
         </header>
-        <form action="payment" class="">
-            <h3>Forma de pagamento</h3><br>
-            <input type="radio" name="paga">
-            <label for="money"><img src="public/paypal.png" class="w-xl h-xl"> Paypal</label><br><br>
-            <input type="radio" name="paga">
-            <label for="money"><img src="public/mbway.png" class="w-xl h-md"> MBway</label><br><br>
-            <input type="radio" name="paga-mul">
-            <label for="money"><img src="public/multibanco.png" onclick="showContent()" class="w-lg h-xl">
-                Multibanco</label><br>
-
-            <div class="hidden" id="content">
-                <form>
-                    <label for="name">Nome no Cartão</label>
-                    <input type="text" required>
-                    <label for="card-num">Nº Cartão</label>
-                    <input type="text" required>
-                    <label for="expiraçao">Data de Expiração</label>
-                    <input type="text" required>
-                    <label for="cvv">CVV</label>
-                    <input type="text" required>
-                    <label for="quantidade">Quantidade</label>
-                    <input type="text" required>
-                </form>
-
-            </div>
-
-        </form>
     </main>
     <script language="javascript" src="script.js"></script>
 </body>
