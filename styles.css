@@ -57,6 +57,18 @@ input {
   border: none;
 }
 
+input[type="radio" i] {
+  transform: scale(2);
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+
+}
+
 /*              UTILITIES              */
 
 /* Font */
@@ -192,6 +204,10 @@ input {
   margin-left: auto;
 }
 
+.mr-md {
+  margin-right: 2rem;
+}
+
 .mt-md {
   margin-top: 2rem;
 }
@@ -230,12 +246,20 @@ input {
   width: 2.5rem;
 }
 
+.w-xxl {
+  width: 4rem;
+}
+
 .w-1\/3 {
   width: 33.33%;
 }
 
 .w-100 {
   width: 100px;
+}
+
+.w-200 {
+  width: 200px;
 }
 
 .w-450 {
@@ -270,6 +294,10 @@ input {
 
 .h-xl {
   height: 2.5rem;
+}
+
+.h-200 {
+  height: 200px;
 }
 
 .min-h-screen {
@@ -373,6 +401,7 @@ input {
 .flex-col {
   flex-direction: column;
 }
+
 
 /* Align */
 

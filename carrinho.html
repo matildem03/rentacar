@@ -26,7 +26,9 @@
                 </nav>
             </div>
             <ul class="flex items-center gap-md">
-                <li><a href="" class="bg-grayDark text-light px-lg py-sm rounded-full font-medium">Reservar</a></li>
+                <li><a href="index.html"
+                        class="bg-grayDark text-light px-lg py-sm rounded-full font-medium">Reservar</a>
+                </li>
                 <li>
                     <a href="carrinho.html"
                         class="rounded-full border-2 border-primary text-primary font-medium px-lg py-sm">Carrinho</a>
@@ -42,33 +44,65 @@
                 </li>
             </ul>
         </header>
-        <form action="payment" class="">
-            <h3>Forma de pagamento</h3><br>
-            <input type="radio" name="paga">
-            <label for="money"><img src="public/paypal.png" class="w-xl h-xl"> Paypal</label><br><br>
-            <input type="radio" name="paga">
-            <label for="money"><img src="public/mbway.png" class="w-xl h-md"> MBway</label><br><br>
-            <input type="radio" name="paga-mul">
-            <label for="money"><img src="public/multibanco.png" onclick="showContent()" class="w-lg h-xl">
-                Multibanco</label><br>
 
-            <div class="hidden" id="content">
-                <form>
-                    <label for="name">Nome no Cartão</label>
-                    <input type="text" required>
-                    <label for="card-num">Nº Cartão</label>
-                    <input type="text" required>
-                    <label for="expiraçao">Data de Expiração</label>
-                    <input type="text" required>
-                    <label for="cvv">CVV</label>
-                    <input type="text" required>
-                    <label for="quantidade">Quantidade</label>
-                    <input type="text" required>
-                </form>
-
-            </div>
-
-        </form>
+        <div class="flex flex-col items-center justify-center mt-xl">
+            <img src="public/mercedes1.png" alt="Car" class="w-450" />
+            <form class="flex flex-col gap-md w-full max-w-xl items-center">
+                <h3>Forma de pagamento</h3>
+                <div class="flex items-center w-full justify-center">
+                    <input type="radio" id="paypal" name="pagar" style="margin-right: 2rem;" onclick="hideElement1()"
+                        required />
+                    <label for="money" class=" flex items-center font-bold"><img src="public/paypal.png" class="w-xxl"
+                            style="margin-right: 2rem;">
+                        Paypal</label>
+                </div>
+                <div class="flex items-center w-full justify-center">
+                    <input type="radio" id="mbway" name="pagar" style="margin-right: 2rem;" onclick="hideElement1()"
+                        required>
+                    <label for="money" class="flex items-center font-bold"><img src=" public/mbway.png" class="w-xxl"
+                            style="margin-right: 2rem;">
+                        MBway</label>
+                </div>
+                <div class="flex items-center w-full justify-center">
+                    <input type="radio" id="multibanco" name="pagar" style="margin-right: 2rem;" onclick="showElement()"
+                        onclick="hideElement()" required>
+                    <label for="money" class="flex items-center font-bold"><img src=" public/multibanco.png"
+                            class="w-xl" style="margin-right: 2rem;">
+                        Multibanco</label>
+                </div>
+                <button type="submit" id="buttonesconde"
+                    class="w-full bg-primary rounded-full text-light py-sm text-lg">
+                    Pagar
+                </button>
+            </form>
+        </div>
+        <div id="hiddenelement" class="hidden flex flex-col items-center justify-center mt-xl">
+            <form class="flex flex-col gap-md w-full max-w-xl items-center">
+                <div class="flex flex-col gap-1 w-full">
+                    <label for="name" class="font-medium">Nome no Cartão</label>
+                    <input type="text" id="namecard" name="namecard" required class="rounded-full py-md px-md" />
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <label for="number" class="font-medium">Nº Cartão</label>
+                    <input type="text" id="numcard" name="numcard" required class="rounded-full py-md px-md" />
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <label for="number" class="font-medium">Data de Expiração</label>
+                    <input type="text" id="data" name="data" required class="rounded-full py-md px-md" />
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <label for="number" class="font-medium">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required class="rounded-full py-md px-md" />
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <label for="number" class="font-medium">Quantidade</label>
+                    <input type="text" id="quant" name="quant" required class="rounded-full py-md px-md" />
+                </div>
+                <button type="submit" class="w-full bg-primary rounded-full text-light py-sm text-lg">
+                    Pagar
+                </button>
+            </form>
+        </div>
     </main>
     <script language="javascript" src="script.js"></script>
 </body>
