@@ -178,6 +178,10 @@ button {
   margin-left: auto;
 }
 
+.mx-top {
+  margin-top: 7rem;
+}
+
 /* Width */
 
 .w-full {
@@ -352,7 +356,14 @@ button {
   height: 450px;
   width: 450px;
   position: absolute;
-  top: 15%;
-  right: 25%;
+  top: 20%;
+  right: 10%;
   border-radius: 9999px;
+}
+
+.us-bg {
+  width: 700px;
+  height: 300px;
+  margin-bottom: -1.2rem;
+
 }
