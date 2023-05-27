@@ -162,6 +162,11 @@ button {
   padding-right: 2rem;
 }
 
+.px-xl {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-xxl {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -178,7 +183,7 @@ button {
   margin-left: auto;
 }
 
-.mx-top {
+.mt-xl {
   margin-top: 7rem;
 }
 
@@ -365,5 +370,4 @@ button {
   width: 700px;
   height: 300px;
   margin-bottom: -1.2rem;
-
 }
