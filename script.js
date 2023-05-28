@@ -1,33 +1,34 @@
-function showElement() {
-    var radio = document.getElementById("multibanco");
-    var content = document.getElementById("hiddenelement");
+function hideAllPaymentForms() {
+  const paypalForm = document.getElementById("paypalForm");
+  paypalForm.classList.add("hidden");
 
-    if (radio.checked) {
-        content.style.display = "block";
-    } else {
-        content.style.display = "none";
-    }
+  const mbwayForm = document.getElementById("mbwayForm");
+  mbwayForm.classList.add("hidden");
+
+  const atmForm = document.getElementById("atmForm");
+  atmForm.classList.add("hidden");
 }
 
-
-function hideElement1() {
-    var radio = document.getElementById("mbway");
-    var content = document.getElementById("hiddenelement");
-
-    if (radio.checked) {
-        content.style.display = "none";
-    } else {
-        content.style.display = "none";
-    }
+function showPaypal() {
+  hideAllPaymentForms();
+  const form = document.getElementById("paypalForm");
+  if (!form.classList.contains("hidden")) return;
+  form.classList.toggle("hidden");
+  form.scrollIntoView(true);
 }
 
-function hideButton() {
-    var radio = document.getElementById("multibanco");
-    var content = document.getElementById("button");
+function showMBWay() {
+  hideAllPaymentForms();
+  const form = document.getElementById("mbwayForm");
+  if (!form.classList.contains("hidden")) return;
+  form.classList.toggle("hidden");
+  form.scrollIntoView(true);
+}
 
-    if (radio.checked) {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
+function showATM() {
+  hideAllPaymentForms();
+  const form = document.getElementById("atmForm");
+  if (!form.classList.contains("hidden")) return;
+  form.classList.toggle("hidden");
+  form.scrollIntoView(true);
 }

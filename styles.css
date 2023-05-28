@@ -51,6 +51,7 @@ button {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 input {
@@ -66,7 +67,6 @@ input[type="radio" i] {
   margin: 3px 3px 0px 5px;
   padding: initial;
   border: initial;
-
 }
 
 /*              UTILITIES              */
@@ -204,6 +204,10 @@ input[type="radio" i] {
 
 .pt-lg {
   padding-top: 2rem;
+}
+
+.pt-xxl {
+  padding-top: 5rem;
 }
 
 /* Margin */
@@ -423,7 +427,6 @@ input[type="radio" i] {
   flex-direction: column;
 }
 
-
 /* Align */
 
 .justify-center {
@@ -493,6 +496,10 @@ input[type="radio" i] {
 
 .hidden {
   display: none;
+}
+
+.car {
+  cursor: pointer;
 }
 
 .car :hover {

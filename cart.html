@@ -80,7 +80,7 @@
               id="paypal"
               name="pagar"
               style="margin-right: 2rem"
-              onclick="hideElement1()"
+              onclick="showPaypal()"
               required
             />
             <label for="money" class="flex items-center font-bold"
@@ -92,17 +92,16 @@
               Paypal</label
             >
           </div>
-          <div class="flex items-center w-full justify-center">
+          <div class="flex items-center w-full justify-center gap-lg">
             <input
               type="radio"
               id="mbway"
               name="pagar"
-              style="margin-right: 2rem"
-              onclick="hideElement1()"
+              onclick="showMBWay()"
               required
             />
-            <label for="money" class="flex items-center font-bold"
-              ><img
+            <label for="money" class="flex items-center font-bold">
+              <img
                 src=" public/mbway.png"
                 class="w-xxl"
                 style="margin-right: 2rem"
@@ -116,8 +115,7 @@
               id="multibanco"
               name="pagar"
               style="margin-right: 2rem"
-              onclick="showElement()"
-              onclick="hideButton()"
+              onclick="showATM()"
               required
             />
             <label for="money" class="flex items-center font-bold"
@@ -129,9 +127,36 @@
               Multibanco</label
             >
           </div>
+        </form>
+      </div>
+      <div
+        id="paypalForm"
+        class="hidden flex flex-col items-center justify-center mt-md"
+      >
+        <form class="flex flex-col gap-md w-full max-w-xl items-center">
+          <div class="flex flex-col gap-1 w-full">
+            <h2 class="text-center">Pagar com Paypal</h2>
+            <label for="paypalemail" class="font-medium">Email</label>
+            <input
+              type="email"
+              id="paypalemail"
+              name="paypalemail"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <div class="flex flex-col gap-1 w-full">
+            <label for="paypalpassword" class="font-medium">Password</label>
+            <input
+              type="password"
+              id="paypalpassword"
+              name="paypalpassword"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
           <button
             type="submit"
-            id="button"
             class="w-full bg-primary rounded-full text-light py-sm text-lg"
           >
             Pagar
@@ -139,11 +164,36 @@
         </form>
       </div>
       <div
-        id="hiddenelement"
-        class="hidden flex flex-col items-center justify-center mt-xl"
+        id="mbwayForm"
+        class="hidden flex flex-col items-center justify-center mt-md"
       >
         <form class="flex flex-col gap-md w-full max-w-xl items-center">
           <div class="flex flex-col gap-1 w-full">
+            <h2 class="text-center">Pagar com MBWay</h2>
+            <label for="mbway" class="font-medium">Nº Telemóvel</label>
+            <input
+              type="text"
+              id="mbway"
+              name="mbway"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-primary rounded-full text-light py-sm text-lg"
+          >
+            Pagar
+          </button>
+        </form>
+      </div>
+      <div
+        id="atmForm"
+        class="hidden flex flex-col items-center justify-center mt-md"
+      >
+        <form class="flex flex-col gap-md w-full max-w-xl items-center">
+          <div class="flex flex-col gap-1 w-full">
+            <h2 class="text-center">Pagar com Multibanco</h2>
             <label for="name" class="font-medium">Nome no Cartão</label>
             <input
               type="text"
@@ -202,6 +252,19 @@
         </form>
       </div>
     </main>
+    <footer class="bg-gray pt-xxl">
+      <div class="flex flex-col max-w-screen-xl mx-auto py-lg">
+        <div class="flex justify-between items-center">
+          <img src="public/WheelzLogo.png" alt="Wheelz Logo" class="w-100" />
+          <div class="text-sm flex gap-lg">
+            <p>Matilde Marques, 109342</p>
+            <p>Mariana Moreira, 107369</p>
+            <p>Vasco Rocha, 108855</p>
+          </div>
+          <p class="text-sm text-grayDark font-medium">© 2023 Wheelz</p>
+        </div>
+      </div>
+    </footer>
     <script language="javascript" src="script.js"></script>
   </body>
 </html>
