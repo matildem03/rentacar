@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheelz RentaCar</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <main class="bg-gray">
+      <header
+        class="flex items-center max-w-screen-xl mx-auto justify-between pt-lg"
+      >
+        <div class="flex items-center gap-xl">
+          <a href="index.html"
+            ><img src="public/WheelzLogo.png" alt="Wheelz Logo" class="h-lg"
+          /></a>
+          <nav class="app-nav">
+            <ul class="flex items-center gap-md">
+              <li>
+                <a href="index.html" class="text-dark font-bold">Aluguer</a>
+              </li>
+              <li>
+                <a href="quems.html" class="text-dark font-bold">Sobre</a>
+              </li>
+              <li>
+                <a href="seguros.html" class="text-dark font-bold">Seguros</a>
+              </li>
+              <li>
+                <a href="contacto.html" class="text-dark font-bold">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="flex items-center gap-md">
+          <li>
+            <a
+              href="index.html"
+              class="bg-grayDark text-light px-lg py-sm rounded-full font-medium"
+              >Reservar</a
+            >
+          </li>
+          <li>
+            <a
+              href="cart.html"
+              class="rounded-full border-2 border-primary text-primary font-medium px-lg py-sm"
+              >Carrinho</a
+            >
+          </li>
+          <li>
+            <a href="login.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-dark w-md h-md"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="flex flex-col items-center justify-center mt-xl">
+        <img src="public/mercedes1.png" alt="Car" class="w-450" />
+        <form class="flex flex-col gap-md w-full max-w-xl items-center">
+          <h3>Forma de pagamento</h3>
+          <div class="flex items-center w-full justify-center">
+            <input
+              type="radio"
+              id="paypal"
+              name="pagar"
+              style="margin-right: 2rem"
+              onclick="hideElement1()"
+              required
+            />
+            <label for="money" class="flex items-center font-bold"
+              ><img
+                src="public/paypal.png"
+                class="w-xxl"
+                style="margin-right: 2rem"
+              />
+              Paypal</label
+            >
+          </div>
+          <div class="flex items-center w-full justify-center">
+            <input
+              type="radio"
+              id="mbway"
+              name="pagar"
+              style="margin-right: 2rem"
+              onclick="hideElement1()"
+              required
+            />
+            <label for="money" class="flex items-center font-bold"
+              ><img
+                src=" public/mbway.png"
+                class="w-xxl"
+                style="margin-right: 2rem"
+              />
+              MBway</label
+            >
+          </div>
+          <div class="flex items-center w-full justify-center">
+            <input
+              type="radio"
+              id="multibanco"
+              name="pagar"
+              style="margin-right: 2rem"
+              onclick="showElement()"
+              onclick="hideButton()"
+              required
+            />
+            <label for="money" class="flex items-center font-bold"
+              ><img
+                src=" public/multibanco.png"
+                class="w-xl"
+                style="margin-right: 2rem"
+              />
+              Multibanco</label
+            >
+          </div>
+          <button
+            type="submit"
+            id="button"
+            class="w-full bg-primary rounded-full text-light py-sm text-lg"
+          >
+            Pagar
+          </button>
+        </form>
+      </div>
+      <div
+        id="hiddenelement"
+        class="hidden flex flex-col items-center justify-center mt-xl"
+      >
+        <form class="flex flex-col gap-md w-full max-w-xl items-center">
+          <div class="flex flex-col gap-1 w-full">
+            <label for="name" class="font-medium">Nome no Cartão</label>
+            <input
+              type="text"
+              id="namecard"
+              name="namecard"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <div class="flex flex-col gap-1 w-full">
+            <label for="number" class="font-medium">Nº Cartão</label>
+            <input
+              type="text"
+              id="numcard"
+              name="numcard"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <div class="flex flex-col gap-1 w-full">
+            <label for="number" class="font-medium">Data de Expiração</label>
+            <input
+              type="text"
+              id="data"
+              name="data"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <div class="flex flex-col gap-1 w-full">
+            <label for="number" class="font-medium">CVV</label>
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <div class="flex flex-col gap-1 w-full">
+            <label for="number" class="font-medium">Quantidade</label>
+            <input
+              type="text"
+              id="quant"
+              name="quant"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-primary rounded-full text-light py-sm text-lg"
+          >
+            Pagar
+          </button>
+        </form>
+      </div>
+    </main>
+    <script language="javascript" src="script.js"></script>
+  </body>
+</html>

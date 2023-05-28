@@ -1,78 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wheelz - Login</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="bg-gray min-h-screen">
-        <header class="flex items-center max-w-screen-xl mx-auto justify-between pt-lg">
-            <div class="flex items-center gap-xl">
-                <a href="index.html"><img src="public/WheelzLogo.png" alt="Wheelz Logo" class="h-lg" /></a>
-                <nav class="app-nav">
-                    <ul class="flex items-center gap-md">
-                        <li>
-                            <a href="index.html" class="text-dark font-bold">Aluguer</a>
-                        </li>
-                        <li>
-                            <a href="quems.html" class="text-dark font-bold">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="seguros.html" class="text-dark font-bold">Seguros</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html" class="text-dark font-bold">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+      <header
+        class="flex items-center max-w-screen-xl mx-auto justify-between pt-lg"
+      >
+        <div class="flex items-center gap-xl">
+          <a href="index.html"
+            ><img src="public/WheelzLogo.png" alt="Wheelz Logo" class="h-lg"
+          /></a>
+          <nav class="app-nav">
             <ul class="flex items-center gap-md">
-                <li>
-                    <a href="index.html"
-                        class="bg-grayDark text-light px-lg py-sm rounded-full font-medium">Reservar</a>
-                </li>
-                <li>
-                    <a href="carrinho.html"
-                        class="rounded-full border-2 border-primary text-primary font-medium px-lg py-sm">Carrinho</a>
-                </li>
-                <li>
-                    <a href="login.html" class="selected-li">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-dark w-md h-md" fill="none"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                        </svg>
-                    </a>
-                </li>
+              <li>
+                <a href="index.html" class="text-dark font-bold">Aluguer</a>
+              </li>
+              <li>
+                <a href="quems.html" class="text-dark font-bold">Sobre</a>
+              </li>
+              <li>
+                <a href="seguros.html" class="text-dark font-bold">Seguros</a>
+              </li>
+              <li>
+                <a href="contacto.html" class="text-dark font-bold">Contacto</a>
+              </li>
             </ul>
-        </header>
-        <div class="flex flex-col items-center justify-center mt-xl">
-            <img src="public/mercedes1.png" alt="Car" class="w-450" />
-            <form class="flex flex-col gap-md w-full max-w-xl items-center">
-                <div class="flex flex-col gap-1 w-full">
-                    <label for="email" class="font-medium">Email</label>
-                    <input type="email" id="email" name="email" required class="rounded-full py-md px-md" />
-                </div>
-                <div class="flex flex-col gap-1 w-full">
-                    <label for="password" class="font-medium">Password</label>
-                    <input type="password" id="password" name="password" required class="rounded-full py-md px-md" />
-                </div>
-                <button type="submit" class="w-full bg-primary rounded-full text-light py-sm text-lg">
-                    Entrar
-                </button>
-                <div class="text-sm">
-                    Não tens conta?
-                    <a href="register.html" class="font-bold text-dark">Cria aqui</a>
-                </div>
-            </form>
+          </nav>
         </div>
+        <ul class="flex items-center gap-md">
+          <li>
+            <a
+              href="index.html"
+              class="bg-grayDark text-light px-lg py-sm rounded-full font-medium"
+              >Reservar</a
+            >
+          </li>
+          <li>
+            <a
+              href="cart.html"
+              class="rounded-full border-2 border-primary text-primary font-medium px-lg py-sm"
+              >Carrinho</a
+            >
+          </li>
+          <li>
+            <a href="login.html" class="selected-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-dark w-md h-md"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <div class="flex flex-col items-center justify-center mt-xl">
+        <img src="public/mercedes1.png" alt="Car" class="w-450" />
+        <form class="flex flex-col gap-md w-full max-w-xl items-center">
+          <div class="flex flex-col gap-1 w-full">
+            <label for="email" class="font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <div class="flex flex-col gap-1 w-full">
+            <label for="password" class="font-medium">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              class="rounded-full py-md px-md"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-primary rounded-full text-light py-sm text-lg"
+          >
+            Entrar
+          </button>
+          <div class="text-sm">
+            Não tens conta?
+            <a href="register.html" class="font-bold text-dark">Cria aqui</a>
+          </div>
+        </form>
+      </div>
     </main>
     <script language="javascript" src="script.js"></script>
-</body>
-
+  </body>
 </html>
