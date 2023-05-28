@@ -494,3 +494,7 @@ input[type="radio" i] {
 .hidden {
   display: none;
 }
+
+.car :hover {
+  background-color: var(--color-gray);
+}
