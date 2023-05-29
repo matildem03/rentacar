@@ -34,8 +34,8 @@ function showATM() {
 }
 
 function goTo() {
-  var selectBox = document.getElementById("select")
-  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  const selectBox = document.getElementById("select");
+  const selectedValue = selectBox.options[selectBox.selectedIndex].value;
 
   if (selectedValue == "lisboa") {
     window.location.href = "booknow1.html";
@@ -44,11 +44,12 @@ function goTo() {
   }
 }
 
-function calculate() {
-  var number = document.getElementById("ndias")
-  var aluguer = 45
+function calculateTotal(pricePerDay) {
+  const inputElement = document.getElementById("ndays");
+  const nDays = inputElement.value;
 
-  res = 0
-  res = number * aluguer
+  const total = pricePerDay * nDays;
 
+  const toPayElement = document.getElementById("toPay");
+  toPayElement.innerText = total ? total + "€" : "0€";
 }
