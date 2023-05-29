@@ -32,3 +32,23 @@ function showATM() {
   form.classList.toggle("hidden");
   form.scrollIntoView(true);
 }
+
+function goTo() {
+  var selectBox = document.getElementById("select")
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+  if (selectedValue == "lisboa") {
+    window.location.href = "booknow1.html";
+  } else if (selectedValue == "porto") {
+    window.location.href = "booknow.html";
+  }
+}
+
+function calculate() {
+  var number = document.getElementById("ndias")
+  var aluguer = 45
+
+  res = 0
+  res = number * aluguer
+
+}
